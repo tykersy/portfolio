@@ -85,7 +85,9 @@
             <label for="message">메시지</label>
             <textarea id="message" name="message" rows="5" required placeholder="문의 내용을 입력해 주세요."></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">보내기</button>
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
+          <button type="submit" class="btn btn-primary" id="submitBtn">보내기</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
         </form>
       </div>
     </section>
